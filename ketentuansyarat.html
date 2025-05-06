@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syarat dan Ketentuan</title>
+  <link rel="icon" href="gambar/A.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+      background-image: url(gambar/wp3.png);
+      background-size: cover;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 200px;
+        margin-top: 20px;
+      }
+  
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        color: #ff4d4d;
+      }
+
+      p {
+        padding: 50px;
+        margin-top: -50px;
+        text-align: center;
+      }
+  
+  .button-10 {
+  touch-action: manipulation;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.6em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.button-10::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.4em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.4em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.button-10:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.2em);
+}
+
+.button-10:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.3em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.3em, -1em);
+}
+
+.button-10:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.4em);
+}
+
+.button-10:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+    .button-10:hover::before {
+      box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+      transform: translate3d(0, 0.5em, -1em);
+    }
+
+    .button-10:active {
+      background: #ffe9e9;
+      transform: translate(0em, 0.75em);
+    }
+
+    .button-10:active::before {
+      box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+      transform: translate3d(0, 0, -1em);
+    }
+
+    section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+
+    h2 {
+      color: #ff4d6d;
+    }
+
+    ol {
+      margin-left: 20px;
+      padding: 50px;
+    }
+
+    li {
+      margin-bottom: 20px;
+      line-height: 2;
+      margin-top: 0px;
+    }
+
+    a {
+      color: #ff4d6d;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .logo img {
+        transition: transform 0.4s;
+        cursor: pointer;
+      }
+
+      .logo img:hover {
+        transform: scale(1.2);
+      }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="gambar/klee.png" alt="Logo" width="70">
+          <span>Food Review Blog</span>
+        </div>
+        <div class="nav-bar">
+          <button class="button-10" onclick="location.href='aboutfood.html'"><span class="text">About Food</span></button>
+          <button class="button-10" onclick="location.href='restaurant.html'"><span class="text">Restaurant</span></button>
+          <button class="button-10" onclick="location.href='profile.html'"><span class="text">Profile</span></button>
+          <button class="button-10" onclick="confirmLogout()"><span class="text">Logout</span></button>
+        </div>
+      </header>
+
+  <section>
+    <h2 align="center">Syarat dan Ketentuan</h2>
+    <p>Dengan menggunakan situs ini, kamu dianggap telah membaca, memahami, dan menyetujui semua syarat dan ketentuan berikut:</p>
+
+    <ol>
+      <li><strong>Penggunaan Konten:</strong> Semua konten di situs ini hanya untuk informasi umum. Dilarang menyalin tanpa izin tertulis.</li>
+      <li><strong>Akses Website:</strong> Kami berhak mengubah atau menghentikan layanan kapan saja tanpa pemberitahuan sebelumnya.</li>
+      <li><strong>Akun Pengguna:</strong> Jika kamu mendaftar akun, kamu bertanggung jawab atas keamanan dan kerahasiaan data login kamu.</li>
+      <li><strong>Tautan Eksternal:</strong> Kami tidak bertanggung jawab atas konten atau kebijakan privasi dari situs yang tertaut dari situs ini.</li>
+      <li><strong>Perubahan Syarat:</strong> Kami bisa mengubah syarat ini kapan saja. Perubahan berlaku setelah diposting di halaman ini.</li>
+      <li><strong>Kontak Kami:</strong> Jika ada pertanyaan, silakan hubungi kami di <a href="mailto:Audzieal.com">support@Audzieal.com</a>.</li>
+    </ol>
+  </section>
+
+  <script>
+    //log out
+    function confirmLogout() {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Kamu Yakin?',
+        text: 'Kamu bakalan keluar dari akunmu loh!',
+        showCancelButton: true,
+        confirmButtonText: 'Iya, Logout',
+        cancelButtonText: 'Batal',
+        allowOutsideClick: false,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Simulasi logout
+          Swal.fire({
+            icon: 'Berhasil',
+            title: 'Logged Out!',
+            text: 'Cape ah kuar aja lu sono.',
+            confirmButtonText: 'Balik Ke Halaman Login',
+            allowOutsideClick: false,
+          }).then(() => {
+            // ke index.html
+            window.location.href = 'index.html';
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

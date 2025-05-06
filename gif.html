@@ -1,0 +1,127 @@
+<head>
+  <!-- ... tetap sama ... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f2f2f2, #e3f0ff); /* NEW */
+      margin: 0;
+      padding: 0;
+      height: 96vh;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease; /* NEW */
+    }
+
+    /* Animasi */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .text-section {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .text-section h1 {
+      color: #333;
+    }
+
+    .text-section p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .image-section, .gif-section {
+      width: 45%;
+      text-align: center;
+    }
+
+    .image-section img,
+    .gif-section img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .section-wrapper {
+      margin-bottom: 60px;
+    }
+
+    /* Bagian tombol kontak */
+    .contact-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .contact-buttons a {
+      position: relative; /* NEW */
+    }
+
+    .contact-buttons a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.2s;
+    }
+
+    .contact-buttons a:hover img {
+      transform: scale(1.1);
+    }
+
+    .contact-buttons a:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bagian Terima Kasih -->
+  <div class="main-container section-wrapper">
+    <div class="text-section">
+      <h1>🎉 Terima Kasih!</h1>
+      <p>Terima kasih telah mengunjungi website kami.</p>
+      <p>Kami harap kamu mendapatkan pengalaman yang menyenangkan dan informasi yang bermanfaat.</p>
+      <p>Jika ada pertanyaan, kritik, atau saran, silakan hubungi kami melalui halaman kontak.</p>
+      <p>Selamat menjelajahi konten lainnya!</p>
+
+      <!-- Tombol Kontak -->
+      <div class="contact-buttons">
+        <a href="https://wa.me/62895328020648" target="_blank" data-tooltip="WhatsApp"><img src="gambar/wa.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/audziealfaiz/" target="_blank" data-tooltip="Instagram"><img src="gambar/ig.png" alt="Instagram"></a>
+        <a href="https://x.com/AudzieAl" target="_blank" data-tooltip="Twitter"><img src="gambar/twt.png" alt="Twitter"></a>
+        <a href="https://web.facebook.com/profile.php?id=100092843091191" target="_blank" data-tooltip="Facebook"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="gif-section">
+      <img src="gambar/kle.gif" alt="GIF Genshin Impact">
+    </div>
+  </div>
+
+  <!-- Bagian Tentang Developer -->
+  <div class="main-container">
+    <div class="image-section">
+      <img src="gambar/paiz.png" alt="Foto Developer">
+    </div>
+    <div class="text-section">
+        <h1><i class="fa-solid fa-user-gear"></i> Tentang Developer</h1> <!-- NEW icon -->
+        <p>Halo! Saya adalah developer di balik website ini.</p>
+        <p>Saya memiliki minat besar di dunia web development, khususnya dalam membangun website yang interaktif, responsif, dan mudah digunakan.</p>
+        <p>Dengan semangat belajar yang tinggi, saya terus mengembangkan kemampuan dalam HTML, CSS, JavaScript, dan PHP.</p>
+        <p>Terima kasih sudah mengunjungi halaman ini. Yuk, terus dukung karya anak bangsa!</p>
+    </div>
+  </div>
+
+</body>
