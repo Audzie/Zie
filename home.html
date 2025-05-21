@@ -133,7 +133,7 @@
 .img-r {
     display: flex;
     justify-content: center;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
     gap: 35px;
 }
 
@@ -169,11 +169,12 @@
 }
 
 .review {
+    position: relative; 
     width: 400px;
     height: 400px;
     background-color: rgba(243, 243, 243, 1);
     border-radius: 43px;
-    margin-bottom: 2000px;
+    margin-bottom: 200px;
     -webkit-box-shadow: 18px 10px 57px -43px rgba(66, 68, 90, 1);
     -moz-box-shadow: 18px 10px 57px -43px rgba(66, 68, 90, 1);
     box-shadow: 18px 10px 57px -43px rgba(66, 68, 90, 1);
@@ -190,7 +191,148 @@
     margin-left: 400px;
     font-size: 19px;
     font-weight: 800;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+}
+
+.star-rating {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 35px;
+    color: #FFB90A;
+    letter-spacing: 5px;
+}
+.review h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review p {
+    text-align: center;
+    padding: 82px;
+    font-size: 20px;
+    margin-top: -60px;
+}
+
+/*  */
+
+.deal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 400px;
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 120px;
+}
+
+.deal img {
+    width: 45px;
+}
+
+/* Footer */
+
+
+.footer {
+  background: #f8f8f8;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+  color: #444;
+}
+
+.footer-top {
+  margin-right: 15%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-area {
+  max-width: 250px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 110px;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.footer-section h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section li {
+  cursor: pointer;
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-name {
+  color: orange;
+  font-weight: bold;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+.bulet {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F9;
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.bulet:hover {
+    transform: translate(-1px,-1px);
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0px;
 }
 </style>
 </head>
@@ -239,24 +381,97 @@
             <img src="gambar/pizza.png">
         </div>
 
-
+    <!-- Review -->
     <div class="review-span">
         <span>Pinned Review</span>
         <img width="40px" src="gambar/pin.png">
     </div>
-        <div class="review-main">
-            <div class="review">
-            <img width="110px" src="gambar/orang1.png">
-            </div>
+<div class="review-main">
+  <div class="review">
+    <div class="star-rating">★★★★★</div>
+    <img width="110px" src="gambar/orang1.png">
+    <h2>Lioness M</h2>
+    <p>Its beautiful place.. Lovly creative tasty cakes.. Doughnuts are die for... Even with 1kg you can get designer cakes... I always buy cakes there for any function in my house</p>
+  </div>
 
-            <div class="review">
-            <img width="110px" src="gambar/orang2.png">
-            </div>
+  <div class="review">
+    <div class="star-rating">★★★★<span style="color: #BDBDBD;">★</span></div>
+    <img width="110px" src="gambar/orang2.png">
+    <h2>Vinodhini Rajasekhar</h2>
+    <p>Most suitable place for low budget foodie. Price is reasonable and it is served properly.I ate french fries and sandwich which tasted good here.</p>
+  </div>
 
-            <div class="review">
-            <img width="110px" src="gambar/orang3.png">
-            </div>
+  <div class="review">
+    <div class="star-rating">★★★★★</div>
+    <img width="110px" src="gambar/orang3.png">
+    <h2>Manivanna Kamaraj</h2>
+    <p>Has become my regular place to by cakes. Wonderful taste and economical price compared to other cake shops.</p>
+  </div>
+</div>
+    <!-- Premium Deals -->
+    <div class="deal">
+        <span>Premium Deals</span>
+        <img src="gambar/deal.png">
+    </div>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-section logo-area">
+      <img src="gambar/logo.png" alt="Logo" class="footer-logo" />
+      <p class="footer-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Mattis, tenetur.</p>
+      
+      <div class="footer-social">
+        <div class="bulet">
+            <img src="gambar/fb.png" alt="Facebook" />
         </div>
+        <div class="bulet">
+            <img src="gambar/twt.png" alt="Twitter" />
+        </div>
+        <div class="bulet">
+            <img src="gambar/ig.png" alt="Instagram" />
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-section">
+      <h2>Locations</h2>
+      <ul>
+        <li>Ambattur</li>
+        <li>Avadi</li>
+        <li>Thirumullaivoyal</li>
+        <li>Poonamallee</li>
+        <li>Mugappair</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>Links</h2>
+      <ul>
+        <li>About</li>
+        <li>Menu</li>
+        <li>Gallery</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2>Company</h2>
+      <ul>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+      </ul>
+    </div>
+  </div>
+
+<hr style="margin-top: 30px;">
+
+  <div class="footer-bottom">
+    <p>Copyright &copy; 2022 <span class="footer-name">Majharul</span>. All Rights Reserved.</p>
+  </div>
+</footer>
 <script>
   const images = [
     "gambar/burgers.png",
